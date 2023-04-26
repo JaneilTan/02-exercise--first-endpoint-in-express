@@ -19,5 +19,8 @@ app.get("/properties/:id", (request, response) => {
 });
 
 // FIXME: Create an endpoint that returns all the properties
+app.get("/properties", (request, response) => {
+  response.send(properties);
 
+});
 module.exports = app;
